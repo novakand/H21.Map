@@ -7,9 +7,9 @@ import { MapType } from './dto/enum/e-map-type';
 import { IBounds } from './dto/interfaces/i-bounds';
 import { H21MapComponent } from './components/h21-map.component';
 import { H21MapMarkerDirective } from './components/h21-map-marker.directive';
-import { H21MapInfoBoxComponent } from 'projects/h21-map/src/components/h21-map-info-box.component';
-import { H21MaSearchDirective } from 'projects/h21-map/src/components/h21-map-search-directive';
-import { H21MapCircleDirective } from 'projects/h21-map/src/components/h21-map-circle.directive';
+import { H21MapInfoBoxComponent } from './components/h21-map-info-box.component';
+import { H21MaSearchDirective } from './components/h21-map-search-directive';
+import { H21MapCircleDirective } from './components/h21-map-circle.directive';
 
 var data = {
   "filter": null,
