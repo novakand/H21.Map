@@ -14872,7 +14872,7 @@ export class AppComponent {
   @ViewChild(H21MaGeocodingDirective) public geoCoding: H21MaGeocodingDirective;
 
   title = 'map';
-  markers: IMarker[] = [];
+  markers: IMarker[] = []; 
   circles: ICircle[] = [];
 
   iconDestination = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAcCAYAAAESKH/LAAAABGdBTUEAALGPC/xhBQAAAqBJREFUSA2dVT1PG0EQHVtGIgQJHMSHoKGNqeldU1BQUFv0KSkgDRVI/An3LuKO2jWEFskdRFYKhBQjPtIkury3u7N3+2ETsdLc7My8Nzu3O7cnglGI9KnNBEbBUXMO2G5g9lHnhA6NYfDdbkFd48NBjjVqOGk2C/tQB94mur8Xubjg6gz9Vvosczo5siQ84WhCniAdRV45lKILoori8NA6ej2jGz4HF9zaMmbpXFnxcc071rxBhM7AQQOepAplQ28YAias3VbF6nScn/vSXXzMwn4Ylj5qZivVsmmsb4HgL5BuGXWznR2cHQ5ifz8MYZkNX4qWFOpRyHAWSF1H7GYBsRPg59iX2AB1IEMIT7YPaeZA02q+8gSwq80T763ahsDOHYO5YNgM6Yj3W+ST7SvdppcXm6nRKAr22GBQFK2WZu/nwUput6vgp7quavTcnAib9Bk7t7wssrhYDf8Mwa+vImze+XmRdltkZkZk5A/vjGUcQWxdWrPaFe2XAHjkCRVAxWf7WRkIlCuUBH4+s4pJNIJ/KUkADvZzPP7EDrVz4K8afFOzRgjr95875nqKsSaG2KnvxS59awfjxFWbXL/DeoHyCjwNXmdpSWR1NXAZ4/ZWhE0xeRwj6Rkv4A4wYVKSDg5Erq9tV7GzKHt7Ig8PIoNBKJubZOg4NTnxGEKqr2TnvPOmdKDh8MPgKL8kzTPkSa/rUolm35+chO5eT+TmJvSl1jq/Ed45ulKpcxVvb9sK42da8Tcm5pWftlYuca6A1MdczTpO8BfeZA3yPXijx0eRu7vA9R8Gc6y5nCUcK7GXp/3Zyq0KKyXH93CZMTPj60A6kFwyngtj6f8gkyvrAnkXomdAvZsFvseJZJcQVn75Hv5EDhK2XOLPE0FR4B+/GGxGZqVkXgAAAABJRU5ErkJggg=='
@@ -14944,7 +14944,7 @@ export class AppComponent {
 
   }
   markerMouseOut(marker: IMarker) {
-    console.log('markerMouseOut', marker)
+    console.log('markerMouseOuT', marker)
     this.infoBoxOptions.isOpen = false;
   }
 
