@@ -59,11 +59,15 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "map:build"
+            "browserTarget": "map:build",
+            "project": "projects/h21-map/ng-package.json",
+            "tsConfig": "projects/h21-map/tsconfig.lib.json"
           },
           "configurations": {
             "production": {
-              "browserTarget": "map:build:production"
+              "browserTarget": "map:build:production",
+              "project": "projects/h21-map/ng-package.prod.json"
+              
             }
           }
         },
