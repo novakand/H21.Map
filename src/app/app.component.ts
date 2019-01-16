@@ -1,13 +1,14 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
-import { H21MapComponent, H21MapMarkerDirective, H21MapInfoBoxComponent, H21MapCircleDirective, H21MaSearchDirective } from 'projects/h21-map/src/components';
+import { H21MapComponent, H21MapMarkerDirective, H21MapInfoBoxComponent, H21MapCircleDirective, H21MaSearchDirective } from './components';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { MapManager } from 'projects/h21-map/src/dto/manager/map-manager';
-import { IPosition } from 'projects/h21-map/src/dto/interfaces/i-position';
-import { SearchMinimalRequest, SearchMin } from 'projects/h21-map/src/dto/entity/search-minimal-request';
-import { Position } from 'projects/h21-map/src/dto/entity/position';
-import { ISearchMinimalResponse } from 'projects/h21-map/src/dto/interfaces/i-search-minimal-response';
-import { H21MaGeocodingDirective } from 'projects/h21-map/src/components/h21-map-geocoding.directive';
-import { IBounds, MapType } from 'projects/h21-map/src/dto';
+import { MapManager } from './dto/manager/map-manager';
+import { IPosition } from './dto/interfaces/i-position';
+import { SearchMinimalRequest, SearchMin } from './dto/entity/search-minimal-request';
+import { Position } from './dto/entity/position';
+import { ISearchMinimalResponse } from './dto/interfaces/i-search-minimal-response';
+import { H21MaGeocodingDirective } from './components/h21-map-geocoding.directive';
+import { MapType } from './dto/enum/e-map-type';
+import { IBounds } from './dto/interfaces/i-bounds';
 
 var data = {
   "filter": null,
