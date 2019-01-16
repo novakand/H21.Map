@@ -46,11 +46,6 @@
     "zone.js": "^0.8.27"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.12.1",
-    "@angular-devkit/build-ng-packagr": "~0.11.4",
-    "@angular/cli": "^7.2.1",
-    "@angular/compiler-cli": "^7.2.0",
-    "@angular/language-service": "^7.2.0",
     "@h21-map-types/baidu-map": "^1.0.4",
     "@h21-map-types/google-map": "^1.0.3",
     "@h21-map-types/leaflet-edit-table": "^1.0.2",
@@ -67,6 +62,11 @@
     "@h21-map/leaflet-markercluster": "^1.0.6",
     "@h21-map/leaflet-path-drag": "^1.0.3",
     "@h21-map/maps-css": "^1.0.7",
+    "@angular-devkit/build-angular": "~0.11.4",
+    "@angular-devkit/build-ng-packagr": "~0.11.4",
+    "@angular/cli": "^7.2.1",
+    "@angular/compiler-cli": "^7.2.0",
+    "@angular/language-service": "^7.2.0",
     "@types/jasmine": "~3.3.5",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~10.12.18",
