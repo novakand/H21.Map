@@ -1,5 +1,5 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
-import { H21MapComponent, H21MapMarkerDirective, H21MapInfoBoxComponent, H21MapCircleDirective, H21MaSearchDirective } from './components';
+//import { H21MapComponent, H21MapMarkerDirective, H21MapInfoBoxComponent, H21MapCircleDirective, H21MaSearchDirective } from './components';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { MapManager } from './dto/manager/map-manager';
 import { IPosition } from './dto/interfaces/i-position';
@@ -9,6 +9,11 @@ import { ISearchMinimalResponse } from './dto/interfaces/i-search-minimal-respon
 import { H21MaGeocodingDirective } from './components/h21-map-geocoding.directive';
 import { MapType } from './dto/enum/e-map-type';
 import { IBounds } from './dto/interfaces/i-bounds';
+import { H21MapComponent } from './components/h21-map.component';
+import { H21MapMarkerDirective } from './components/h21-map-marker.directive';
+import { H21MapInfoBoxComponent } from 'projects/h21-map/src/components/h21-map-info-box.component';
+import { H21MaSearchDirective } from 'projects/h21-map/src/components/h21-map-search-directive';
+import { H21MapCircleDirective } from 'projects/h21-map/src/components/h21-map-circle.directive';
 
 var data = {
   "filter": null,
