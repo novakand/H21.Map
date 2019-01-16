@@ -1,11 +1,7 @@
-import { Component, ViewChild, ElementRef } from '@angular/core';
-//import { H21MapComponent, H21MapMarkerDirective, H21MapInfoBoxComponent, H21MapCircleDirective, H21MaSearchDirective } from './components';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Component, ViewChild } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { MapManager } from './dto/manager/map-manager';
 import { IPosition } from './dto/interfaces/i-position';
-import { SearchMinimalRequest, SearchMin } from './dto/entity/search-minimal-request';
-import { Position } from './dto/entity/position';
-import { ISearchMinimalResponse } from './dto/interfaces/i-search-minimal-response';
 import { H21MaGeocodingDirective } from './components/h21-map-geocoding.directive';
 import { MapType } from './dto/enum/e-map-type';
 import { IBounds } from './dto/interfaces/i-bounds';
@@ -14866,7 +14862,7 @@ var data = {
 
 export class AppComponent {
 
-  constructor(private manager: MapManager, private http: HttpClient) { }
+  constructor() { }
 
   @ViewChild(H21MapComponent) public map: H21MapComponent;
   @ViewChild(H21MapMarkerDirective) public mar: H21MapMarkerDirective;
