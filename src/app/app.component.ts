@@ -3,8 +3,11 @@ import { H21MapComponent, H21MapMarkerDirective, H21MapInfoBoxComponent, H21MapC
 import { HttpClient } from '@angular/common/http';
 import { MapManager } from './dto/manager/map-manager';
 import { IPosition } from './dto/interfaces/i-position';
-import { H21MaGeocodingDirective } from 'projects/h21-map/src/components/h21-map-geocoding.directive';
-import { IBounds, MapType } from 'projects/h21-map/src/dto';
+import { MapType } from './dto/enum/e-map-type';
+import { IBounds } from './dto/interfaces/i-bounds';
+import { H21MaGeocodingDirective } from './components/h21-map-geocoding.directive';
+
+
 
 var data = {
   "filter": null,
