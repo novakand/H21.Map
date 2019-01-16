@@ -30,6 +30,7 @@ export * from './enum/e-zoom-type';
 export * from './../dto/providers/google/enum/e-google-address-type';
 export * from './../dto/providers/yandex/enum/e-yandex-address-type';
 
+export * from './interfaces/i-additional-information';
 export * from './interfaces/i-address';
 export * from './interfaces/i-api-settings';
 export * from './interfaces/i-marker-options';
@@ -56,7 +57,6 @@ export * from './interfaces/i-route-info';
 export * from './interfaces/i-route-options';
 export * from './interfaces/i-route-text-value';
 export * from './interfaces/i-size';
-export * from './interfaces/i-additional-information';
 export * from './interfaces/i-search-minimal';
 export * from './interfaces/i-search-minimal-request';
 export * from './interfaces/i-search-minimal-response';

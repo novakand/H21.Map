@@ -9,7 +9,7 @@ export class LeafletApiConfig implements IApiConfig {
 
     constructor() {
         this.key = '',
-        this.url = 'https://unpkg.com/leaflet@1.3.4/dist/leaflet.js',
+        this.url = 'http://unpkg.com/leaflet@1.3.4/dist/leaflet.js',
         this.language = 'ru_RU',
         this.version = ''
     }
