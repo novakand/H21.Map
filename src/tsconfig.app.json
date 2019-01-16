@@ -1,0 +1,23 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    "module": "esnext",
+    "types": [
+      "jasmine",
+      "jasminewd2",
+      "node",
+      "leaflet-map",
+      "google-map",
+      "baidu-map",
+      "yandex-map",
+      "leaflet-edit-table",
+      "leaflet-markercluster"
+    ],
+  },
+  "exclude": [
+    "index.d.ts",
+    "test.ts",
+    "**/*.spec.ts"
+  ]
+}

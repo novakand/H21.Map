@@ -1,0 +1,41 @@
+<h21-map #map  [latitude]="mapOptions.latitude" [longitude]="mapOptions.longitude" (mapReady)="mapReady($event)" [enableClick]="mapOptions.enableClick" [enableToolbar]="true"
+    [enableResetToolbar]="true" (onChangedToolbar)="onChangedToolbar($event)" (mapClick)="mapClick($event)"
+    (boundsChange)="boundsChange($event)" [provider]="mapOptions.provider" [enableClick]="mapOptions.enableClick" [zoom]="mapOptions.zoom" [minZoom]="mapOptions.minZoom" [maxZoom]="mapOptions.maxZoom">
+
+    <h21-map-cluster [gridSize]="clusterOptions.gridSize" [minimumClusterSize]="clusterOptions.minimumClusterSize" #cluster>
+    </h21-map-cluster>
+
+    <h21-map-search  #search>
+    </h21-map-search>
+
+    <h21-map-geocoding>
+    </h21-map-geocoding>
+
+    <h21-map-marker *ngFor="let m of markers; let i = index " (markerClick)="markerClick($event, m)"
+        (markerMouseOut)="markerMouseOut(m)" (markerMouseOver)="markerMouseOver(m)"
+        [latitude]="m.latitude" [longitude]="m.longitude" [inCluster]="m.inCluster" [iconUrl]="m.iconUrl">
+    </h21-map-marker>
+
+    <h21-map-circle #circle *ngFor="let c of circles; let n = index" (circleClick)="circleClick($event, c)"
+        [latitude]="c.latitude" [longitude]="c.longitude" [radius]="c.radius">
+    </h21-map-circle>
+
+    <h21-map-info-box #box [longitude]="infoBoxOptions.longitude" [latitude]="infoBoxOptions.latitude" [isOpen]="infoBoxOptions.isOpen">
+        <div class="tooltip_content">
+            <div class="tooltip_label">
+                Hotel name:
+            </div>
+            <div class="tooltip-value">
+                {{infoBoxOptions.title}}
+            </div>
+        </div>
+        <div class="tooltip_content">
+            <div class="tooltip_label">
+                Hotel address:
+            </div>
+            <div class="tooltip-value">
+                {{infoBoxOptions.discription}}
+            </div>
+        </div>
+    </h21-map-info-box>
+</h21-map>
