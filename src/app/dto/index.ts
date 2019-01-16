@@ -30,7 +30,7 @@ export * from './enum/e-zoom-type';
 export * from './../dto/providers/google/enum/e-google-address-type';
 export * from './../dto/providers/yandex/enum/e-yandex-address-type';
 
-export * from './interfaces/i-additional-information';
+// export * from './interfaces/i-additional-information';
 export * from './interfaces/i-address';
 export * from './interfaces/i-api-settings';
 export * from './interfaces/i-marker-options';
