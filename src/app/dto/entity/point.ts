@@ -1,7 +1,6 @@
 import { IPoint } from "../interfaces/i-point";
 import { IIcon } from "../interfaces/i-icon";
 import { IPosition } from "../interfaces/i-position";
-import { IPrice } from "../interfaces/i-price";
 import { IPointAddress } from "../interfaces/i-address";
 import { IAdditionalInformation } from "../interfaces/i-additional-information";
 
